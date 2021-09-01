@@ -7,7 +7,8 @@ data class UsersEntity(
     var followers: String = " ",
     var following: String = " ",
     var company: String = " ",
-    var location: String = " ",
+    var city: String = " ",
+    var province: String = " ",
     var repository: String = " ",
 
     )
