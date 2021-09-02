@@ -12,25 +12,12 @@
         android:id="@+id/img_logo"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:src="@drawable/ic_logo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!--    <com.google.android.material.textview.MaterialTextView-->
-    <!--        android:id="@+id/tv_welcome"-->
-    <!--        android:layout_width="wrap_content"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        android:layout_marginTop="32dp"-->
-    <!--        android:paddingHorizontal="16dp"-->
-    <!--        android:paddingVertical="4dp"-->
-    <!--        android:text="Selamat Datang,"-->
-    <!--        android:textColor="@color/white"-->
-    <!--        android:textSize="32sp"-->
-    <!--        app:fontFamily="@font/roboto_medium"-->
-    <!--        app:layout_constraintStart_toStartOf="parent"-->
-    <!--        app:layout_constraintTop_toTopOf="parent" />-->
 
     <com.google.android.material.textview.MaterialTextView
         android:layout_width="wrap_content"

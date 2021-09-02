@@ -55,15 +55,7 @@ class UsersGithubAdapter : RecyclerView.Adapter<UsersGithubAdapter.listUserHolde
                 itemView.setOnClickListener {
                     val intent = Intent(itemView.context, DetailUsersGithubActivity::class.java)
                         .apply {
-                            putExtra(Constants.NAME, usersItem.name)
-                            putExtra(Constants.USERNAME, usersItem.username)
-                            putExtra(Constants.PHOTO, usersItem.photo)
-                            putExtra(Constants.REPOSITORY, usersItem.repository)
-                            putExtra(Constants.FOLLOWERS, usersItem.followers)
-                            putExtra(Constants.FOLLOWING, usersItem.following)
-                            putExtra(Constants.CITY, usersItem.city)
-                            putExtra(Constants.PROVINCE, usersItem.province)
-                            putExtra(Constants.COMPANY, usersItem.company)
+                            putExtra(Constants.USERS, usersItem)
                         }
                     itemView.context.startActivity(intent)
                     (itemView.context as Activity).finish()

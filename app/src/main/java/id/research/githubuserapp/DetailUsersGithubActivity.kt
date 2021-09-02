@@ -19,17 +19,18 @@ class DetailUsersGithubActivity : AppCompatActivity() {
             finish()
         }
 
+        val users = intent.getParcelableExtra<UsersEntity>(Constants.USERS) as UsersEntity
+
         with(mDetailBinding) {
-            tvName.text = intent.getStringExtra(Constants.NAME)
-            tvFirstUsername.text = intent.getStringExtra(Constants.USERNAME)
-            tvSecondUsername.text = intent.getStringExtra(Constants.USERNAME)
-            tvValueFollowers.text = intent.getStringExtra(Constants.FOLLOWERS)
-            tvValueFollowing.text = intent.getStringExtra(Constants.FOLLOWING)
-            tvValueRepository.text = intent.getStringExtra(Constants.REPOSITORY)
-            tvCity.text = intent.getStringExtra(Constants.CITY)
-            tvProvince.text = intent.getStringExtra(Constants.PROVINCE)
-            tvCompany.text = intent.getStringExtra(Constants.COMPANY)
-            imgUser.setImageResource(intent.getIntExtra(Constants.PHOTO, 0))
+            tvName.text = users.name
+            tvFirstUsername.text = users.username
+            tvSecondUsername.text = users.username
+            tvValueFollowers.text = users.followers
+            tvValueFollowing.text = users.following
+            tvValueRepository.text = users.repository
+            tvLocation.text = users.location
+            tvCompany.text = users.company
+            imgUser.setImageResource(users.photo)
         }
 
     }
